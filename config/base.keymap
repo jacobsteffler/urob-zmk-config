@@ -112,7 +112,7 @@ ZMK_MOD_MORPH(magic_shift_tap, bindings = <&shift_repeat>, <&caps_word>;
 ZMK_ADAPTIVE_KEY(
     shift_repeat, bindings = <&sk LSHFT>;
     repeat {
-      trigger-keys = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z>;
+      trigger-keys = <>;
       bindings = <&key_repeat>;
       max-prior-idle-ms = <1200>;
       strict-modifiers;
