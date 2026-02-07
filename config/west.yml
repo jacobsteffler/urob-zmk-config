@@ -26,11 +26,19 @@ manifest:
       url-base: https://github.com/urob
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: beekeeb
+      url-base: https://github.com/beekeeb/
 
   projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
+
+    - name: beekeeb-hshs
+      remote: beekeeb
+      repo-path: zmk-config-hshs
+      path: modules/boards/beekeeb-hshs
+      revision: main
 
     # ZMK modules
     - name: zmk-adaptive-key
